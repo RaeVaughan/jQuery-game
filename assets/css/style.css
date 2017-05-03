@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+/************* Instructions **************/
+
+
+#instructions {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin-bottom: 20px;
+}
+
+
+/************* Crystals **************/
+.crystal-image {
+	width: 150px;
+}
+
+
+
+/************* Number to guess and total already guessed **************/
+
+#smaller-container {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 60px;
+}
+
+#number-to-guess {
+	float: left
+}
+
+#points{
+	float:right;
+}
+
+
+/************* Score **************/
+
+#score {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}

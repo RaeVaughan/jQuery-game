@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Crystal Collector</h1>
+	</div>
+
+	<div id="wrapper">
+		<div id="instructions">
+			<p>At the start of the game, you will be given a random number.</p>
+			<p>By clicking one of the four crystals below, you will add a certain number to your overall points. The number of points is hidden until you click the crystal.</p>
+			<p>To win, you must match your points with the random number. Go over and you lose!</p>
+			<p>When you win and lose, the game will reset with a new random number to match and new numbers assigned to each crystal.</p>
+			<p>Good luck!</p>
+		</div>
+
+		<div id="crystals">
+			<img class="crystal-image" src="assets/images/amethyst.jpeg">
+			<img class="crystal-image" src="assets/images/jade.jpeg">
+			<img class="crystal-image" src="assets/images/sapphire.jpeg">
+			<img class="crystal-image" src="assets/images/topaz.jpeg">
+		</div>
+
+		<div id="smaller-container">
+
+			<h2>Number to Guess</h2>
+			<p id="number-to-guess"></p>
+			
+			<div id="points"></div>
+
+		</div>
+
+		<div id="score">
+			<h3>Wins</h3>
+			<p class="wins"></p>
+			<h3>Losses</h3>
+			<p class="losses"></p>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
