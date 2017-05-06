@@ -5,17 +5,181 @@ $(document).ready(function() {
 var targetNumber = Math.floor(Math.random() * (121-19) + 19);
 $("#number-to-guess").text(targetNumber);
 
-//creates the counter of points that will go up on each click of a crystal
+//creates the counter of points that will go up on each click of a power-up
 var counter = 0;
 $("#points").text(counter);
 
-//creates a randomly generated number between 1 and 12 - does this number need to be inside the click function for the crystal image class?
-var numberOptions = Math.floor(Math.random() * 13);
-console.log(numberOptions);
+var winCounter = 0;
+$("#wins").text(winCounter);
+var lossCounter = 0;
+$("#losses").text(lossCounter);
 
 
-//does each crystal image need it's own click function, or just the crystal-image class? if I do a click function for the crystal-image class, how do I get each crystal to have its own value? how do I get the crystals to not generate a new number with every click, but instead only when the game resets?
+//creates randomly generated numbers between 1 and 12 for each image
+var coinNumber = Math.floor((Math.random() * 13) + 1);
+var mushroomNumber = Math.floor((Math.random() * 13) + 1);
+var starNumber = Math.floor((Math.random() * 13) + 1);
+var flowerNumber = Math.floor((Math.random() * 13) + 1);
 
+//for each image, on click, the random number from the respective global variable is assigned and added to the counter
+
+// Coin image -----------------------------------------------------------------------------
+$("#coin-img").click(function(){
+	coinNumber;
+	console.log(coinNumber);
+	counter += coinNumber;
+	$("#points").html(counter);
+
+	//if the number guessed becomes equal to the target number: 
+	if (counter === targetNumber) {
+		//wins goes up one
+		winCounter++;
+		$("#wins").text(winCounter);
+		//target number is reset
+		targetNumber = Math.floor(Math.random() * (121-19) + 19);
+		$("#number-to-guess").text(targetNumber);
+		//counter is reset to 0
+		counter = 0;
+		$("#points").text(counter);
+		//random number for the coin is reset
+		coinNumber = Math.floor((Math.random() * 13) + 1);
+	}
+
+	//if the number guessed becomes greater than the target number:
+	else if (counter >= targetNumber){
+		//losses goes up one
+		lossCounter++;
+		$("#losses").text(lossCounter);
+		//target number is reset
+		targetNumber = Math.floor(Math.random() * (121-19) + 19);
+		$("#number-to-guess").text(targetNumber);
+		//counter is reset to 0
+		counter = 0;
+		$("#points").text(counter);
+		//random number for the coin is reset
+		coinNumber = Math.floor((Math.random() * 13) + 1);
+	}
+});
+
+
+// Mushroom image -----------------------------------------------------------------------------
+
+$("#mushroom-img").click(function(){
+	mushroomNumber
+	console.log(mushroomNumber);
+	counter += mushroomNumber;
+	$("#points").html(counter);
+
+	//if the number guessed becomes equal to the target number: 
+	if (counter === targetNumber) {
+		//wins goes up one
+		winCounter++;
+		$("#wins").text(winCounter);
+		//target number is reset
+		targetNumber = Math.floor(Math.random() * (121-19) + 19);
+		$("#number-to-guess").text(targetNumber);
+		//counter is reset to 0
+		counter = 0;
+		$("#points").text(counter);
+		//random number for the coin is reset
+		coinNumber = Math.floor((Math.random() * 13) + 1);
+	}
+
+	//if the number guessed becomes greater than the target number:
+	else if (counter >= targetNumber){
+		//losses goes up one
+		lossCounter++;
+		$("#losses").text(lossCounter);
+		//target number is reset
+		targetNumber = Math.floor(Math.random() * (121-19) + 19);
+		$("#number-to-guess").text(targetNumber);
+		//counter is reset to 0
+		counter = 0;
+		$("#points").text(counter);
+		//random number for the coin is reset
+		coinNumber = Math.floor((Math.random() * 13) + 1);
+	}
+});
+
+
+// Star image -----------------------------------------------------------------------------
+
+$("#star-img").click(function(){
+	starNumber
+	console.log(starNumber);
+	counter += starNumber;
+	$("#points").html(counter);
+
+	//if the number guessed becomes equal to the target number: 
+	if (counter === targetNumber) {
+		//wins goes up one
+		winCounter++;
+		$("#wins").text(winCounter);
+		//target number is reset
+		targetNumber = Math.floor(Math.random() * (121-19) + 19);
+		$("#number-to-guess").text(targetNumber);
+		//counter is reset to 0
+		counter = 0;
+		$("#points").text(counter);
+		//random number for the coin is reset
+		coinNumber = Math.floor((Math.random() * 13) + 1);
+	}
+
+	//if the number guessed becomes greater than the target number:
+	else if (counter >= targetNumber){
+		//losses goes up one
+		lossCounter++;
+		$("#losses").text(lossCounter);
+		//target number is reset
+		targetNumber = Math.floor(Math.random() * (121-19) + 19);
+		$("#number-to-guess").text(targetNumber);
+		//counter is reset to 0
+		counter = 0;
+		$("#points").text(counter);
+		//random number for the coin is reset
+		coinNumber = Math.floor((Math.random() * 13) + 1);
+	}
+});
+
+
+// Flower image -----------------------------------------------------------------------------
+
+$("#flower-img").click(function(){
+	flowerNumber
+	console.log(flowerNumber);
+	counter += flowerNumber;
+	$("#points").html(counter);
+
+	//if the number guessed becomes equal to the target number: 
+	if (counter === targetNumber) {
+		//wins goes up one
+		winCounter++;
+		$("#wins").text(winCounter);
+		//target number is reset
+		targetNumber = Math.floor(Math.random() * (121-19) + 19);
+		$("#number-to-guess").text(targetNumber);
+		//counter is reset to 0
+		counter = 0;
+		$("#points").text(counter);
+		//random number for the coin is reset
+		coinNumber = Math.floor((Math.random() * 13) + 1);
+	}
+
+	//if the number guessed becomes greater than the target number:
+	else if (counter >= targetNumber){
+		//losses goes up one
+		lossCounter++;
+		$("#losses").text(lossCounter);
+		//target number is reset
+		targetNumber = Math.floor(Math.random() * (121-19) + 19);
+		$("#number-to-guess").text(targetNumber);
+		//counter is reset to 0
+		counter = 0;
+		$("#points").text(counter);
+		//random number for the coin is reset
+		coinNumber = Math.floor((Math.random() * 13) + 1);
+	}
+});
 
 
 

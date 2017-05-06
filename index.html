@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crystal Collector</title>
+	<title>Power-Up Collector</title>
 	<meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -10,23 +10,23 @@
 <body>
 
 	<div id="header">
-		<h1>Crystal Collector</h1>
+		<h1>Power-Up Collector</h1>
 	</div>
 
 	<div id="wrapper">
 		<div id="instructions">
 			<p>At the start of the game, you will be given a random number.</p>
-			<p>By clicking one of the four crystals below, you will add a certain number to your overall points. The number of points is hidden until you click the crystal.</p>
+			<p>By clicking one of the four power-ups below, you will add a certain number to your overall points. The number of points is hidden until you click the power-up.</p>
 			<p>To win, you must match your points with the random number. Go over and you lose!</p>
-			<p>When you win and lose, the game will reset with a new random number to match and new numbers assigned to each crystal.</p>
+			<p>When you win and lose, the game will reset with a new random number to match and new numbers assigned to each power-up.</p>
 			<p>Good luck!</p>
 		</div>
 
-		<div id="crystals">
-			<img class="crystal-image" src="assets/images/amethyst.jpeg">
-			<img class="crystal-image" src="assets/images/jade.jpeg">
-			<img class="crystal-image" src="assets/images/sapphire.jpeg">
-			<img class="crystal-image" src="assets/images/topaz.jpeg">
+		<div id="power-ups">
+			<img class="power-up-image" id="coin-img" src="assets/images/coin.png">
+			<img class="power-up-image" id="mushroom-img" src="assets/images/mushroom.png">
+			<img class="power-up-image" id="star-img" src="assets/images/star.jpg">
+			<img class="power-up-image" id="flower-img" src="assets/images/flower.png">
 		</div>
 
 		<div id="smaller-container">
@@ -40,9 +40,9 @@
 
 		<div id="score">
 			<h3>Wins</h3>
-			<p class="wins"></p>
+			<p id="wins"></p>
 			<h3>Losses</h3>
-			<p class="losses"></p>
+			<p id="losses"></p>
 		</div>
 
 	</div>
