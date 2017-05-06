@@ -16,10 +16,10 @@ $("#losses").text(lossCounter);
 
 
 //creates randomly generated numbers between 1 and 12 for each image
-var coinNumber = Math.floor((Math.random() * 13) + 1);
-var mushroomNumber = Math.floor((Math.random() * 13) + 1);
-var starNumber = Math.floor((Math.random() * 13) + 1);
-var flowerNumber = Math.floor((Math.random() * 13) + 1);
+var coinNumber = Math.floor((Math.random() * 12) + 1);
+var mushroomNumber = Math.floor((Math.random() * 12) + 1);
+var starNumber = Math.floor((Math.random() * 12) + 1);
+var flowerNumber = Math.floor((Math.random() * 12) + 1);
 
 //for each image, on click, the random number from the respective global variable is assigned and added to the counter
 
@@ -42,7 +42,8 @@ $("#coin-img").click(function(){
 		counter = 0;
 		$("#points").text(counter);
 		//random number for the coin is reset
-		coinNumber = Math.floor((Math.random() * 13) + 1);
+		coinNumber = Math.floor((Math.random() * 12) + 1);
+		alert("Hooray! A win!");
 	}
 
 	//if the number guessed becomes greater than the target number:
@@ -57,7 +58,8 @@ $("#coin-img").click(function(){
 		counter = 0;
 		$("#points").text(counter);
 		//random number for the coin is reset
-		coinNumber = Math.floor((Math.random() * 13) + 1);
+		coinNumber = Math.floor((Math.random() * 12) + 1);
+		alert("You lose! Keep playing?");
 	}
 });
 
@@ -82,7 +84,8 @@ $("#mushroom-img").click(function(){
 		counter = 0;
 		$("#points").text(counter);
 		//random number for the coin is reset
-		coinNumber = Math.floor((Math.random() * 13) + 1);
+		mushroomNumber = Math.floor((Math.random() * 12) + 1);
+		alert("Hooray! A win!");
 	}
 
 	//if the number guessed becomes greater than the target number:
@@ -97,7 +100,8 @@ $("#mushroom-img").click(function(){
 		counter = 0;
 		$("#points").text(counter);
 		//random number for the coin is reset
-		coinNumber = Math.floor((Math.random() * 13) + 1);
+		mushroomNumber = Math.floor((Math.random() * 12) + 1);
+		alert("You lose! Keep playing?");
 	}
 });
 
@@ -122,7 +126,8 @@ $("#star-img").click(function(){
 		counter = 0;
 		$("#points").text(counter);
 		//random number for the coin is reset
-		coinNumber = Math.floor((Math.random() * 13) + 1);
+		starNumber = Math.floor((Math.random() * 12) + 1);
+		alert("Hooray! A win!");
 	}
 
 	//if the number guessed becomes greater than the target number:
@@ -137,7 +142,8 @@ $("#star-img").click(function(){
 		counter = 0;
 		$("#points").text(counter);
 		//random number for the coin is reset
-		coinNumber = Math.floor((Math.random() * 13) + 1);
+		starNumber = Math.floor((Math.random() * 12) + 1);
+		alert("You lose! Keep playing?");
 	}
 });
 
@@ -162,7 +168,8 @@ $("#flower-img").click(function(){
 		counter = 0;
 		$("#points").text(counter);
 		//random number for the coin is reset
-		coinNumber = Math.floor((Math.random() * 13) + 1);
+			flowerNumber = Math.floor((Math.random() * 12) + 1);
+			alert("Hooray! A win!");
 	}
 
 	//if the number guessed becomes greater than the target number:
@@ -177,7 +184,8 @@ $("#flower-img").click(function(){
 		counter = 0;
 		$("#points").text(counter);
 		//random number for the coin is reset
-		coinNumber = Math.floor((Math.random() * 13) + 1);
+		flowerNumber = Math.floor((Math.random() * 12) + 1);
+		alert("You lose! Keep playing?");
 	}
 });
 
