@@ -2,6 +2,22 @@
 	box-sizing: border-box;
 }
 
+/************* Basic Stylings **************/
+
+
+body {
+	background: url("../images/background.png") no-repeat center center fixed;
+	background-size: cover;
+}
+
+h1 {
+font-family: 'Press Start 2P', cursive;
+}
+
+h2, h3, p, #points {
+	font-family: 'Lato', sans-serif;
+}
+
 /************* Instructions **************/
 
 
