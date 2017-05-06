@@ -16,9 +16,9 @@
 
 	<div id="wrapper">
 		<div id="instructions">
-			<p>At the start of the game, you will be given a random number.</p>
-			<p>By clicking one of the four power-ups below, you will add a certain number to your overall points. The number of points is hidden until you click the power-up.</p>
-			<p>To win, you must match your points with the random number. Go over and you lose!</p>
+			<p>At the start of the game, you will be given a random number to guess.</p>
+			<p>By clicking one of the four power-ups below, you will add a certain number to your overall total. The number of points is hidden until you click the power-up.</p>
+			<p>To win, you must match your total with the number to guess. Go over and you lose!</p>
 			<p>When you win and lose, the game will reset with a new random number to match and new numbers assigned to each power-up.</p>
 			<p>Good luck!</p>
 		</div>
@@ -26,25 +26,31 @@
 		<div id="power-ups">
 			<img class="power-up-image" id="coin-img" src="assets/images/coin.png">
 			<img class="power-up-image" id="mushroom-img" src="assets/images/mushroom.png">
-			<img class="power-up-image" id="star-img" src="assets/images/star.jpg">
-			<img class="power-up-image" id="flower-img" src="assets/images/flower.png">
+			<img class="power-up-image" id="star-img" src="assets/images/star2.png">
+			<img class="power-up-image" id="flower-img" src="assets/images/flower2.png">
 		</div>
 
 		<div id="smaller-container">
 
-			<h2>Number to Guess</h2>
-			<p id="number-to-guess"></p>
+			<div id="guess">
+				<h2>Number to Guess</h2>
+				<p id="number-to-guess"></p>
+			</div>
 			
-			<div id="points"></div>
+			<div id="total">
+				<h2>Total</h2>
+				<p id="points"></p>
+			</div>
 
 		</div>
 
 		<div id="score">
-			<h3>Wins</h3>
-			<p id="wins"></p>
-			<h3>Losses</h3>
-			<p id="losses"></p>
+			<h3>Wins: <span id="wins"></span></h3>
+			<h3>Losses: <span id="losses"></span></h3>
+			
 		</div>
+
+		
 
 	</div>
 

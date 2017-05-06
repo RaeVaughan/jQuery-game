@@ -59,7 +59,7 @@ $("#coin-img").click(function(){
 		$("#points").text(counter);
 		//random number for the coin is reset
 		coinNumber = Math.floor((Math.random() * 12) + 1);
-		alert("You lose! Keep playing?");
+		alert("Oh no! You lost!");
 	}
 });
 
